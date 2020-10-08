@@ -1,0 +1,2 @@
+10203040f;profesor;francisco;40
+21703876h;programador;marcos;40

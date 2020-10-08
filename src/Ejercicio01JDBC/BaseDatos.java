@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 public class BaseDatos {
 
-    private final String servidor = "jdbc:mysql://localhost/empleados";
+    private final String servidor = "jdbc:mysql://localhost/empresaJDBC";
     private final String user = "root";
     private final String pass = "";
 
@@ -24,14 +24,13 @@ public class BaseDatos {
     }
 
     public boolean crearTablaEmpleado() {
-
         try {
             Connection conexion = this.obtenerConexion();
             String query = "CREATE TABLE empleados\n" +
-                    "    (dni_empleado varchar (9) PRIMARY KEY,\n" +
+                    "    (dni varchar (9) PRIMARY KEY,\n" +
                     "    empleo varchar(40) NOT NULL,\n" +
                     "    nombre varchar(40),\n" +
-                    "    horas_semanales int(2),\n" +
+                    "    horas_semanales int\n" +
                     ");";
             Statement stm = conexion.createStatement();
             stm.executeUpdate(query);
