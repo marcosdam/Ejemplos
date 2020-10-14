@@ -18,7 +18,7 @@ public class Principal {
     static ArrayList<String> listaEmpleados;
     static BaseDatos baseDatos;
     static Empleado empleado;
-    static int empleadoMostrar = 0;
+    //static int empleadoMostrar = 0;
 
     public static void main(String[] args) {
 
